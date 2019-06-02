@@ -1,22 +1,46 @@
 import React, { Component } from 'react'
-import { InputGroup, FormControl } from "react-bootstrap"
+import { Form, Button } from "react-bootstrap"
 
 export class Stories extends Component {
   render() {
     return (
       <div>
-          <br></br><br></br>
-        <InputGroup size="lg">
-            <InputGroup.Prepend>
-                <InputGroup.Text id="inputGroup-sizing-lg">Large</InputGroup.Text>
-            </InputGroup.Prepend>
-            <FormControl aria-label="Large" aria-describedby="inputGroup-sizing-sm" />
-        </InputGroup>
+          
+        <h1 className="text-center" style={ headStyle }>Tell your craziest story!</h1>
 
-        <textarea></textarea>
+        <div className="text-center">
+          <Form style={formStyle}>
+            <textarea style={ inputAreaStyle } type="textarea" label="Example label" />
+            <br/>
+            <Button variant="primary" type="submit">
+              Submit
+            </Button>
+          </Form>
+        </div>
+
+        <hr/>
+        
+        <div className="text-center">
+          <h3> Stories appear here</h3>
+        </div>
+
+
       </div>
     )
   }
+}
+
+const formStyle = {
+  margin: "10px",
+}
+
+const inputAreaStyle = {
+  width: "50%",
+  height: "150px",
+}
+
+const headStyle = {
+  margin: "20px",
 }
 
 export default Stories
