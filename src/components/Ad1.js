@@ -5,7 +5,7 @@ export class Ad1 extends Component {
   render() {
     return (
       <div>
-        <Card body>Ad goes here</Card>;
+        <Card body>Ad goes here</Card>
       </div>
     )
   }

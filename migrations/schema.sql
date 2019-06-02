@@ -1,0 +1,4 @@
+DROP DATABASE IF EXISTS youtilitydb;
+DROP DATABASE IF EXISTS bachpaddb;
+
+CREATE DATABASE bachpaddb;

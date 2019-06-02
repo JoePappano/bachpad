@@ -8,10 +8,10 @@ export class Navigation extends Component {
         <Navbar bg="dark" variant="dark">
             <Navbar.Brand href="#home"> Best Man Hall of Fame </Navbar.Brand>
             <Nav className="mr-auto">
-                <Nav.Link href="#home">Home</Nav.Link>
-                <Nav.Link href="#features">Pics</Nav.Link>
-                <Nav.Link href="#pricing">Videos</Nav.Link>
-                <Nav.Link href="#pricing">Stories</Nav.Link>
+                <Nav.Link href="/">Home</Nav.Link>
+                <Nav.Link href="/pics">Pics</Nav.Link>
+                <Nav.Link href="/videos">Videos</Nav.Link>
+                <Nav.Link href="/stories">Stories</Nav.Link>
             </Nav>
             <Form inline>
                 <FormControl type="text" placeholder="Search" className="mr-sm-2" />

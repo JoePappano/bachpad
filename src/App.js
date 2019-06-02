@@ -3,6 +3,9 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Navigation from "./components/Navigation";
 import Ad1 from "./components/Ad1";
 import Jumbo from "./components/Jumbo"
+import Pics from "./components/Pics"
+import Stories from "./components/Stories"
+import Videos from "./components/Videos"
 
 
 function App() {
@@ -11,18 +14,16 @@ function App() {
        <BrowserRouter>
                 <div>
                     <Navigation/>
+                    <Ad1/>
                       <Switch>
-                          {/* <Route path="/" component={Jumbotron} exact/>
-                          <Route path="/signIn" component={SignIn} />
-                          <Route path="/createListing" component={CreateListing} />
-                          <Route path="/createProviderAccount" component={BecomeAProvider} />
-                          <Route path="/createUser" component={NewUser} />
-                          <Route path="/listingsTable" component={ListingsTable} />
-                          <Route path="/errors" component={Errors} /> */}
+                          <Route path="/" component={Jumbo} exact/>
+                          <Route path="/pics" component={Pics} />
+                          <Route path="/stories" component={Stories} />
+                          <Route path="/videos" component={Videos} />
                           {/* <Route path="/createAccount" component={createAccount} /> */}
                       </Switch>
-                      <Ad1/>
-                      <Jumbo/>
+                      
+                      {/* <Jumbo/> */}
                     {/* <FootComp/> */}
                 </div>
             </BrowserRouter>
