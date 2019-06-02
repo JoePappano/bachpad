@@ -5,9 +5,11 @@ module.exports = (sequelize, DataTypes) => {
             allowNull: false,
         },
         Story: {
-            type: DataTypes.STRING,
+            type: DataTypes.TEXT,
             allowNull: false,
         }
+    }, {
+        timestamps: false,
     });
 
     return Story;

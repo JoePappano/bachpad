@@ -26,9 +26,6 @@ var db = require("./models");
 //Routes aka Controller
 require("./controller/apiRoutes")(app);
 
-
-
-
 var syncOptions = { force: false };
 
 // If running a test, set syncOptions.force to true
